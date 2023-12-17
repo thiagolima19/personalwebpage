@@ -11,10 +11,6 @@ Page created to fulfill the final course criteria at the end of the term.
 
 <br>
 
-<p align="center">
-  <img alt="Personal Webpage" src=".github/preview project.png" width="100%">
-</p>
-
 ## 🚀 Technologies
 
 This final project was built using the following technologies:

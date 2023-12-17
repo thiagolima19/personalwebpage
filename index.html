@@ -1,0 +1,449 @@
+<!-- html page as Final project of Web and internet fundamentals -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- -------header section--------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <span></span>
+            <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#cheatsheet">HTML</a></li>
+            <li><a href="#css-property">CSS</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <ion-icon class="fas" name="close" onclick="closemenu()"></ion-icon>
+          </ul>
+          <ion-icon class="fas" name="menu" onclick="openmenu()"></ion-icon>
+        </nav>
+        <div class="header-text">
+          <p>Software Developement Student</p>
+          <h1>
+            Hi my name is <span>Thiago</span>,<br />
+            I am a Brazilian student<br />who is affictioned with<br />technology!
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---about---- -->
+    <div id="about">
+      <div class="conteiner">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./assets/thiago_motreal.jpeg" alt="This is smilin and in the back is the Motreal City." />
+          </div>
+            <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>
+              Since I graduated in 2013, I worked in the field of designing
+              physical exercise programs for various populations. I have
+              experience in the weight room as well as being a personal trainer.
+              In addition to my undergraduate degree in Physical Education from
+              UFPE, I am also a specialist in Exercise Physiology from Estacio
+              de Sa University and hold a Master's Degree in Physical Education
+              from the Federal University of Pernambuco. <br /><br />
+
+              In recent times, my thirst for exploring new cultures and learning
+              new skills drove me to join an English language exchange program
+              in Ireland. After spending a year and a half on the Emerald
+              Island, I can confidently say that I have become a more resilient
+              person, in addition to having significantly improved my
+              proficiency in English. <br /><br />
+
+              I am currently pursuing an old dream of working in the Information
+              Technology field and living in an English-speaking country,
+              specifically Canada. The time has finally come for me to make this
+              dream a reality. In just a few years, I will be joining a group of
+              individuals who rely on technology for both work and leisure.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skils
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Customer Service</span><br />Work in a fast-paced place
+                  delivering high quality service
+                </li>
+                <li>
+                  <span>Flexible and adaptable</span><br />Managing schedules
+                  and deadlines
+                </li>
+                <li>
+                  <span>Exercise fitness training</span><br />Customized and
+                  individualized exercise trainament
+                </li>
+                <li>
+                  <span>Software and Web develoment</span><br />Starting build
+                  some websites and programmes
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Software develoment Student</span><br />"Acquiring skills through class projects."
+                </li>
+                <li>
+                  <span>Waiter/Server</span><br />During my English interchange Program in Ireland
+                </li>
+                <li>
+                  <span>Personal Trainer</span><br />Private fitness instructions based on the client's needs.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023-Now</span><br />Software develoment Diploma</li>
+                <li>
+                  <span>2016/2018</span><br />Master degree in Physical
+                  Education
+                </li>
+                <li>
+                  <span>2009/2013</span><br />Bachelor in Physical Education
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- ---Hobbies--- -->
+    <div id="hobbies">
+      <div class="container">
+        <h1 class="subtitle">Hobbies</h1>
+        <div class="hobbies-list">
+          <div>
+            <ion-icon name="videocam-outline"></ion-icon>
+            <ion-icon name="film-outline"></ion-icon>
+            <h2>Movies and TV Series</h2>
+            <p>
+              At home, I enjoy watching movies and TV series for both pleasure
+              and to improve my vocabulary. My favorite genres include Sci-Fi,
+              action, comedy, and some thrillers. However, I also like to go to
+              the cinema to watch new and classic movies. Recently, I have
+              watched movies and TV shows such as The Lord of the Rings, The
+              Hobbit, Fast and Furious, most of the Marvel movies, The Last of
+              Us, Friends, and Modern Family.
+            </p>
+          </div>
+          <div>
+            <ion-icon name="beer-outline"></ion-icon>
+            <ion-icon name="fast-food-outline"></ion-icon>
+            <h2>Eat and drink</h2>
+            <p>
+              Normally, I enjoy cooking at home, but occasionally, I like to
+              dine out and try something different. My absolute favorite cuisine
+              is Italian, particularly dishes like pasta, lasagna, and pizza –
+              they are my weakness. Being Brazilian, I may be biased, but I
+              can't resist our traditional food and desserts either! Speaking of
+              beverages, I prefer beer or a glass of wine over any other drink.
+              There's nothing quite like having a cold beer and delicious
+              Brazilian barbecue by the pool on a hot day!
+            </p>
+          </div>
+          <div>
+            <ion-icon name="airplane-outline"></ion-icon>
+            <ion-icon name="earth-outline"></ion-icon>
+            <h2>Travel</h2>
+            <p>
+              I believe that spending money on food and travel is a fascinating
+              thing to do. Exploring new places, countries, and cultures can be
+              enriching for our souls. Often, I find myself wondering if I
+              should move to a particular place after experiencing it. Traveling
+              allows us to become better versions of ourselves by exposing us to
+              all that the world has to offer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---HTML, CSS and JS cheatsheet----- -->
+    <div id="cheatsheet">
+      <div class="container">
+        <h1 class="subtitle">Cheat Sheets</h1>
+        <div class="cheatsheet-list">
+          <div id="html-tag">
+            <h2>HTML</h2>
+            <div class="tag-list">
+                  <div >
+                      <span class="lessThan" >&lt;</span><span class="tagName">!DOCTYPE html</span><span class="greatThan">&gt;</span> <span> It informs the browsing about the document type.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">html</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">html</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Creates a HTML document.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">head</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">head</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Sets off the title and other informations, such language.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">meta</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Defines metadata about HTML document.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">title</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">title</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Sets off the title of the webpage.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">link</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Defines the relationship between the current document and an external resource.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">script</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">script</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Used to embed a clients-side scripty such JavaScript.</span></div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">body</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">body</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Sets off the visible part of the webpage.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">a</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">a</span><span class="greatThan">&gt;</span><span class ="tagDescription"> It defines a hyperlink. href=" " is where you put the link address.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">h1-h6</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">h1-h6</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Creates a headings. h1 is the most important and h6 is the least.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">p</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">p</span><span class="greatThan">&gt;</span><span class ="tagDescription"> It creats a new paragraph.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">nav</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">nav</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Defines a set of navigation links.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">br</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">br</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Inserts a line break.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">div</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">div</span><span class="greatThan">&gt;</span><span class ="tagDescription"> it defines a section and is used as a container to be styled by CSS.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">span</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">span</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Is used to format inline content with CSS.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">pre</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">pre</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Defines preformatted text.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">ul</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">ul</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Creates an unordered list.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">ol</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">ol</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Creates an ordered list.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">li</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">li</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Is used to create each item in the list.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">form</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">form</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Difines a form.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">table</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">table</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Creates a table.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">tr</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">tr</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Defines the table header.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">td</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">td</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Sets each cell in a row.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">button</span><span class="greatThan">&gt;</span> <span class="lessThan" >&lt;&#47;</span><span class="tagName">button</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Creates a clickable button.</span>
+                      </div>           
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">!--</span>  <span class="tagName">--</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Creates a comment that is not showed on the webpage.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">img src="" alt=""</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Is used to embed an image in an HTML page.</span>
+                      </div>
+                      <div>
+                          <span class="lessThan" >&lt;</span><span class="tagName">hr</span><span class="greatThan">&gt;</span><span class ="tagDescription"> Is used to create a horizontal rule in the webpage.</span>
+                      </div>
+              </div>
+              <div class="reference">
+                <a  href="https://www.w3schools.com/tags/default.asp" target="_blank"><ion-icon name="link-outline"></ion-icon>Know more</a>
+              </div>             
+          </div>
+          
+          <div id="css-property">
+              <h2>CSS</h2>
+              
+              <div class="property-list">
+                  <div>
+                    <span class="css-id" >&#35;ID</span> selector:<span class ="tagDescription"> it is a unique identification that is attributed to an HTML element. e.g. #id{}</span></div>
+                  <div>
+                    <span class="css-class" >&#46;Class</span> selector:<span class ="tagDescription"> it is an identification that is attributed to an HTML element. e.g. .class{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >&#42;</span> Universal selector:<span class ="tagDescription"> selects all the elements in the HTML page. e.g. *{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop">Tag name:</span><span class ="tagDescription"> the name of the HTML tag is used for styling. e.g. p{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop">pseudo selector:</span><span class ="tagDescription"> is used to define a special state of an element. e.g. :root{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >align-itens:</span ><span class ="tagDescription"> specifies the alignment inside of flex container</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation:</span ><span class ="tagDescription"> shorthand property to all animation property.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation-delay:</span ><span class ="tagDescription"> delay for start the animation.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation-direction:</span ><span class ="tagDescription"> direction for the animation.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation-name:</span ><span class ="tagDescription"> defines the name for the @keyframes animation.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >aspect-ratio:</span ><span class ="tagDescription"> specify the aspect ratio for an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background:</span ><span class ="tagDescription"> shorthand property to all background property.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-attachement:</span class="css-prop"><span class ="tagDescription"> sets if the image scrolls together or will be fixed.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-color:</span ><span class ="tagDescription"> sets a color to the background.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-image:</span ><span class ="tagDescription"> sets a image background.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-repeat:</span ><span class ="tagDescription"> sets if it will be repeat.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-size:</span ><span class ="tagDescription"> sets the size background image.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border:</span ><span class ="tagDescription"> shorthand property to all borders.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border-color:</span ><span class ="tagDescription"> sets the border color.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border-radius:</span ><span class ="tagDescription"> shorthand for all four border radius.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border-style:</span ><span class ="tagDescription"> sets the border style.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >color:</span ><span class ="tagDescription"> sets the text color.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >columns:</span ><span class ="tagDescription"> shorthand for column-width and column-count.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >cursor:</span ><span class ="tagDescription"> sets the mouse cursor when is pointing over an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >display:</span ><span class ="tagDescription"> sets how a certain HTML element should be displayed.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >flex:</span ><span class ="tagDescription"> shorthand for flex-grow, flex-shrink, flax-basis.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >font:</span ><span class ="tagDescription"> shorthand for font properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >grid:</span ><span class ="tagDescription"> A shorthand for the grid property.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >height:</span ><span class ="tagDescription"> sets the height of an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >justify-content:</span ><span class ="tagDescription"> align items inside a flexible container.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >justify-items:</span ><span class ="tagDescription"> align items on a grid container.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >@keyframes:</span ><span class ="tagDescription"> specifies the animation code.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >margin:</span ><span class ="tagDescription"> shorthand for all margins properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >overflow:</span ><span class ="tagDescription"> sets what happens to an element when its content goes out of limits.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >padding:</span ><span class ="tagDescription"> shorthand for all padding properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >scroll-behaviour:</span ><span class ="tagDescription"> specifies whether goes straight to the section or in a smooth way.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >text-align:</span ><span class ="tagDescription"> specifies the horizontal text alignment.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >text-decoration:</span ><span class ="tagDescription"> specifies the text decoration.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >transform:</span ><span class ="tagDescription"> applies a 2D or 3D transformation to an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >transition:</span ><span class ="tagDescription"> shorthand for all transition properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >translate:</span ><span class ="tagDescription"> specifies the position of an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >width:</span ><span class ="tagDescription"> specifies the width of an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >z-index</span ><span class ="tagDescription"> sets the stack order of a positioned element.</span>
+                  </div>   
+              </div>     
+          </div> 
+          <div class="reference">     
+              <a  href="https://www.w3schools.com/cssref/index.php" target="_blank"><ion-icon name="link-outline"></ion-icon>Know more</a>
+            </div> 
+        </div>
+      </div>
+    </div>
+  
+    <!-- ---------contatc---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact">
+            <h1 class="subtitle">Contact me</h1>
+            <p>
+              <ion-icon name="mail-outline"></ion-icon> thi.blima19@gmail.com
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> +1 587-891-0581</p>
+            <div class="social-icons">
+              <a href="https://github.com/thiagolima19" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="https://www.instagram.com/thiagolima19/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.facebook.com/profile.php?id=100002358005466" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/thiago-barbosa-lima-765537165/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      <div class="copyright">
+        <p>
+          Copyrights © Thiago Lima. Made with
+          <ion-icon name="heart"></ion-icon> based on College Project
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
